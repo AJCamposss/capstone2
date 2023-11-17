@@ -1,16 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
     
-    displayLocations(locationData);
+    displayLocations(locationsArray);
 })
 
-function displayLocations (locationData) {
+function displayLocations (locationsArray) {
     const locationsContainer = document.querySelector("#location")
     locationsContainer.innerHTML = "";
 
 }
  
-locationData.forEach(location => {
-    const locationOption = document.createElement("option")
+locationsArray.forEach(location => {
+    const locationOption = document.createElement("optiion")
     locationOption.classList.add("location");
     locationOption.id = "location-" + location.id;
     
@@ -18,6 +18,8 @@ locationData.forEach(location => {
 
     const locationOptionInfo = document.createElement("Option");
     locationOption.appendChild(locationOptionInfo)
+
+
 
 
 
