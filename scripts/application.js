@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     //calling locationsArray from locationData file
     displayLocations(locationsArray);
-    
+    displayParkTypes(parkTypesArray);
 })
 
 function displayLocations(locationsArray){     //function to call/loop through the arrays
@@ -22,7 +22,10 @@ function addLocation(location) {    //function displays locations in dropdown
     selectElement.appendChild(option);
 }
 
+function displayParkTypes(parkTypesArray) {
 
+    parkTypesArray.forEach()
+}
 
 
 
