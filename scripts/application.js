@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     displayParkTypes(parkTypesArray);
 })
 
-function displayLocations(locationsArray){     //function to call/loop through the arrays
+function displayLocations(locationsArray){     //function to call loop through the arrays
 
 locationsArray.forEach(location => {
     addLocation(location);
@@ -22,9 +22,20 @@ function addLocation(location) {    //function displays locations in dropdown
     selectElement.appendChild(option);
 }
 
-function displayParkTypes(parkTypesArray) {
+function displayParkTypes(parkTypesArray) {       //function to call loop through array
 
-    parkTypesArray.forEach()
+    parkTypesArray.forEach(parkType => {
+        addparkType(parkType)
+    })
+}
+
+function addparkType(parkType) {        //function to display park types in dropdown
+    const selectElement = document.getElementById('parkType')
+    const option = document.createElement('option');
+    option.value = parkType;
+    option.text = parkType;
+    selectElement.appendChild(option)
+
 }
 
 
