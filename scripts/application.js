@@ -9,7 +9,7 @@ function displayLocations(locationsArray){     //function to call loop through t
 
 locationsArray.forEach(location => {
     addLocation(location);
-   });
+   })
 
 
 }
@@ -25,17 +25,16 @@ function addLocation(location) {    //function displays locations in dropdown
 function displayParkTypes(parkTypesArray) {       //function to call loop through array
 
     parkTypesArray.forEach(parkType => {
-        addparkType(parkType)
+        addparkType(parkType);
     })
 }
 
 function addparkType(parkType) {        //function to display park types in dropdown
-    const selectElement = document.getElementById('parkType')
+    const selectElement = document.getElementById('parkType');
     const option = document.createElement('option');
     option.value = parkType;
     option.text = parkType;
-    selectElement.appendChild(option)
-
+    selectElement.appendChild(option);
 }
 
 
