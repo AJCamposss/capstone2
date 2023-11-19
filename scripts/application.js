@@ -2,6 +2,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     //calling locationsArray from locationData file
     displayLocations(locationsArray);
+    
 })
 
 function displayLocations(locationsArray){     //function to call/loop through the arrays
