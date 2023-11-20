@@ -1,17 +1,15 @@
 
-document.addEventListener("DOMContentLoaded", () => {
-    //calling locationsArray from locationData file
-    displayLocations(locationsArray);
-    displayParkTypes(parkTypesArray);
+document.addEventListener("DOMContentLoaded", () => {       //calling locationsArray from locationData file                                                      
+    displayLocations(locationsArray)
+    displayParkTypes(parkTypesArray); 
     
-})
+ })
 
 function displayLocations(locationsArray){     //function to call loop through the arrays
 
 locationsArray.forEach(location => {
     addLocation(location);
    })
-
 
 }
 
@@ -37,18 +35,5 @@ function addParkType(parkType) {        //function to display park types in drop
     option.text = parkType;
     selectElement.appendChild(option);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
