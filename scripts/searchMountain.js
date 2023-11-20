@@ -28,6 +28,9 @@ function displaySelectedMountainInfo(selectedMountain) {
     const mountainInfoElement = document.getElementById('mountainInfo');
     
     // Display information about the selected mountain in 'mountainInfo' element
-    mountainInfoElement.querySelector("p").innerText = `Name: ${selectedMountain.name}`
+    mountainInfoElement.querySelector("#mountainName").innerText = selectedMountain.name;
+    mountainInfoElement.querySelector("#description").innerText = selectedMountain.desc;
+    mountainInfoElement.querySelector("#elevation").innerText = selectedMountain.elevation;
+    mountainInfoElement.querySelector("#effort").innerText = selectedMountain.effort;
     
 }
