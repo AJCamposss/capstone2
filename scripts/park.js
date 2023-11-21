@@ -2,18 +2,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     displayLocations(locationsArray);
     displayParkTypes(parkTypesArray);
-
-    const locationSelect = document.getElementById('location'); // Get the select element for locations
-
-    
-        
-
-        const selectedPark = nationalParksArray.find(park => park.LocationName === selectedLocationName);
-
-        if (selectedPark) {
-            displaySelectedParkInfo(selectedPark);
-        }
-    });
+});
 
 
 function displayLocations(locationsArray) {
